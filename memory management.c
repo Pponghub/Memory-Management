@@ -3,7 +3,19 @@
 
 int x,y,z;
 
+int wryyy(int n){
+    if(n==0){
+        return 0;
+    }
+    int kkk;
+    printf("Address of kkk: %p\n", &kkk);
+    return wryyy(n-1);
+}
+
 int main(){
+
+    wryyy(3);
+
     printf("Address of x: %p\n", &x);
     printf("Address of y: %p\n", &y);
     printf("Address of z: %p\n", &z);
