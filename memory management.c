@@ -24,9 +24,9 @@ int main(){
     int* B = (int*)malloc(100*sizeof(int));
     int* C = (int*)malloc(100*sizeof(int));
 
-    printf("Address of A: %p\n", &A);
-    printf("Address of B: %p\n", &B);
-    printf("Address of C: %p\n", &C);
+    printf("Address of A: %p\n", A);
+    printf("Address of B: %p\n", B);
+    printf("Address of C: %p\n", C);
 
     return 0;
 }
