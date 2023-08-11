@@ -8,7 +8,7 @@ int wryyy(int n){
         return 0;
     }
     int kkk;
-    printf("Address of loacl variable kkk: %p\n", &kkk);
+    printf("Address of local variable kkk: %p\n", &kkk);
     return wryyy(n-1);
 }
 
