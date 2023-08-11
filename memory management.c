@@ -8,18 +8,17 @@ int wryyy(int n){
         return 0;
     }
     int kkk;
-    printf("Address of kkk: %p\n", &kkk);
+    printf("Address of loacl variable kkk: %p\n", &kkk);
     return wryyy(n-1);
 }
 
 int main(){
-
     wryyy(3);
-
-    printf("Address of x: %p\n", &x);
-    printf("Address of y: %p\n", &y);
-    printf("Address of z: %p\n", &z);
-
+    printf("\n");
+    printf("Address of global variable x: %p\n", &x);
+    printf("Address of global variable y: %p\n", &y);
+    printf("Address of global variable z: %p\n", &z);
+    printf("\n");
     int* A = (int*)malloc(100*sizeof(int));
     int* B = (int*)malloc(100*sizeof(int));
     int* C = (int*)malloc(100*sizeof(int));
